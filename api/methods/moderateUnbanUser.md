@@ -3,11 +3,17 @@
 Unbans a specific user from the ban list, if you have [permission](/api/roles.md). You must be manager or above to do 
 this.
 
-### Example
+### Code
 
 ```js
-
+API.moderateUnbanUser(id);
 ```
+
+### Example
+```
+API.moderateUnbanUser(1337);
+```
+Unbans the user with id 1337.
 
 ### Endpoint
 
