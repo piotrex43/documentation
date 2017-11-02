@@ -2,10 +2,10 @@
 
 Forces a skip of the current song, if you have [permission](/api/roles.md).
 
-### Example
+### Code
 
 ```js
-
+API.moderateForceSkip();
 ```
 
 ### Endpoint
