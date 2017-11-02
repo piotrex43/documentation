@@ -2,10 +2,10 @@
 
 Locks or unlocks the wait list, if you have [permission](/api/roles.md).
 
-### Example
+### Code
 
 ```js
-
+API.moderateLockWaitList();
 ```
 
 ### Endpoint
