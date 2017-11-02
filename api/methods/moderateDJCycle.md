@@ -2,10 +2,10 @@
 
 Toggles the DJ Cycle, if you have [permission](/api/roles.md).
 
-### Example
+### Code
 
 ```js
-
+API.moderateDJCycle();
 ```
 
 ### Endpoint
