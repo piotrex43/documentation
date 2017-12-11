@@ -2,11 +2,17 @@
 
 Unmutes the specified user, if you have [permission](/api/roles.md).
 
-### Example
+### Code
 
 ```js
-
+API.moderateUnmuteUser(id);
 ```
+
+### Example
+```js
+API.moderateUnmuteUser(1337);
+```
+Unmutes user with id 1337.
 
 ### Endpoint
 

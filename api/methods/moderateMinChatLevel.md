@@ -4,11 +4,17 @@ Sets the minimum chat to users with a specific level (1, 2 or 3), if you have [p
 
 This prevents someone creating new accounts and spamming the room's chat.
 
-### Example
+### Code
 
 ```js
-
+API.moderateMinChatLevel(number);
 ```
+
+### Example
+```js
+API.moderateMinChatLevel(2);
+```
+Sets the minimum chat level to 2.
 
 ### Endpoint
 
