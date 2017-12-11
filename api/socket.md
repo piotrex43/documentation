@@ -53,6 +53,8 @@ sure that you're still alive. You don't have to respond to these packets at all,
 anyway. If you don't get an `h` message for a very long time, you're probably no longer connected properly to the socket
 server.
 
+*The `h` message is sent approximately 10 seconds after each message sent by the server. If a message was sent in the meantime, the timer is reset, sending the message 10 seconds after the last message.*
+
 ### Event Messages
 
 Event Messages are JSON-encoded arrays containing one or more event objects. These events can be anything from a user
@@ -118,6 +120,8 @@ The `t` property is new: It's the UNIX time at which you sent your message. (In 
 you should divide by 1000 first: `Math.floor(Date.now() / 1000)`.) Theoretically, the plug.dj web app offsets this to be
 close to the plug.dj server time using the `window._st` JavaScript variable, but it doesn't appear to affect much. For
 now, you're safe just using your local UNIX time--or even completely bogus values like your birthday.
+
+**Warning**: Make sure you send data with the correct data types (i.e, `t` as an integer) as there is no indicator suggesting that your message could not interpreted.
 
 ### "auth"
 

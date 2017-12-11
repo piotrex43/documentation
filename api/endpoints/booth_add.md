@@ -42,6 +42,23 @@ User isn't in the room
 }
 ```
 
+Waitlist is full
+```json
+{
+    "data": [],
+    "status": "boothFull",
+}
+```
+
+
+User doesn't have a playlist
+```json
+{
+    "data": [],
+    "status": "noValidPlaylist",
+}
+```
+
 id is missing
 ```json
 {
